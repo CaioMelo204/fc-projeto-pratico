@@ -11,6 +11,6 @@ export class EntityValidationError extends Error {
   }
 
   count() {
-    return Object.keys(this.error).length;
+    return Object.keys(this.error as any).length;
   }
 }
